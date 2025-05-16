@@ -28,15 +28,26 @@ h1 {
   text-align: center;
 }
 
+.form-container {
+  background-color: #5e4c5a;
+  margin-bottom: 28px;
+  border-radius: 9px;
+  padding: 30px;
+  margin-right: 18px;
+}
+
 form {
   padding: 20px;
   margin-right: 20px;
-  background-color: #5e4c5a;
-  border-radius: 9px;
   display: flex;
-  margin-bottom: 28px;
-  padding: 30px;
   font-weight: bolder;
+}
+
+.hint {
+  line-height: 1.5;
+  font-size: 12px;
+  margin-top: 5px;
+  color: grey;
 }
 
 .instructions {
@@ -63,13 +74,33 @@ form {
 
 .poem {
   font-size: 14px;
-  border-left: 3px solid #5e4c5a;
+  border-left: 2px solid #fae5c7;
   padding: 20px;
   line-height: 24px;
+}
+
+.hidden {
+  display: none;
 }
 
 footer {
   text-align: center;
   font-size: 13px;
   margin-top: 30px;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
